@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="TriangleConsumer">
+<head>
+<meta charset="ISO-8859-1">
+<title>Triangle REST Consumer</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+<!--   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>		
+<script src="js/controller.js"></script>
+
+<div class="image-box" style="--image-url: url(https://picsum.photos/1366/768)">
+
+    <div class="container my-5">
+
+       <div class="row">
+       <div class="col-md-4 jobs_index_middle_panels">
+    		<div class="card-transparent">
+        		<div class="card-body rounded" style="background-color: rgba(0, 0, 0, 0.6); ">
+				   <form id="form">
+				   	<div class="row">
+						<div class="form-group col-md-11"> 
+							<label for="sidea" class="col-form-label"> Lado A </label> 
+    			    		<input type="text" name="sidea" class="form-control" placeholder="ingrese lado A">
+    			    	</div>
+    			    	<div class="form-group col-md-11"> 
+							<label for="sideb" class="col-form-label"> Lado B </label> 	
+    						<input type="text" name="sideb" class="form-control" placeholder="ingrese Lado B">
+    					</div>	
+    					<div class="form-group col-md-11"> 
+							<label for="sidec" class="col-form-label"> Lado C </label> 	
+  					    	<input type="text" name="sidec" class="form-control" placeholder="ingrese lado C">
+  						</div>  
+  						<div class="form-group col-md-11">   
+  							<button id="add_btn" type="submit" class="btn btn-primary"
+  							 data-toggle="modal" data-target="#myModal">Enviar</button>
+  							 
+  							<div id="myModal" class="modal fade" role="dialog">
+  								<div class="modal-dialog">
+    							<!-- Modal content-->
+    								<div class="modal-content">
+      									<div class="modal-header">
+        									<h4 class="modal-title">Resultado</h4>
+      									</div>
+      									<div class="modal-body">
+        									<p>Tri&aacute;ngulo: <span class="type"></span></p>   
+      										<p>Per&iacute;metro: <span class="perimeter"></span></p>   
+      									</div>
+      									<div class="modal-footer">
+        								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+  						</div>	
+  				    </div>
+				   </form>
+    			</div>
+    		</div>
+    		</div>
+    	</div>
+    </div>
+			
+</body>
+</html>
